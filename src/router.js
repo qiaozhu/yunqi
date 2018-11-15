@@ -1,20 +1,20 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 
-import goods from './router/goods';
-import cart from './router/cart';
+import forum from './router/forum';
 import user from './router/user';
+import activity from './router/activity';
 
 Vue.use(Router);
 
 const routes = [
   {
     path: '*',
-    redirect: '/goods'
+    redirect: '/activity'
   },
-  ...goods,
-  ...cart,
-  ...user
+  ...forum,
+  ...user,
+  ...activity
 ];
 
 const router = new Router({ routes });

@@ -59,6 +59,7 @@
         立即购买
       </van-goods-action-big-btn>
     </van-goods-action>
+    <base-tabbar />
   </div>
 </template>
 
@@ -77,6 +78,8 @@ import {
   GoodsActionMiniBtn
 } from 'vant';
 
+import BaseTabbar from '@/components/BaseTabbar';
+
 export default {
   components: {
     [Tag.name]: Tag,
@@ -88,7 +91,8 @@ export default {
     [SwipeItem.name]: SwipeItem,
     [GoodsAction.name]: GoodsAction,
     [GoodsActionBigBtn.name]: GoodsActionBigBtn,
-    [GoodsActionMiniBtn.name]: GoodsActionMiniBtn
+    [GoodsActionMiniBtn.name]: GoodsActionMiniBtn,
+    BaseTabbar
   },
 
   data() {
@@ -123,5 +127,5 @@ export default {
 </script>
 
 <style>
-@import '../../assets/css/goods.css';
+@import '../../assets/css/forum.css';
 </style>

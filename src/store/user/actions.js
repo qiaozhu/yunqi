@@ -5,6 +5,6 @@ import * as types from './types';
 // conmit操作对象指向mutation  mutation修改state
 export default {
   setCartData({ commit }, data) {
-    commit(types.SET_CART_DATA, data);
+    commit(types.SET_USER_DATA, data);
   }
 };

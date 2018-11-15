@@ -10,7 +10,7 @@ module.exports = {
       less: {
         modifyVars: {
           // red: '#03a9f4',
-          // blue: '#3eaf7c',
+          blue: '#ff4444'
           // orange: '#f08d49',
           // 'text-color': '#111'
         }
@@ -20,6 +20,7 @@ module.exports = {
   devServer: {
     open: true,
     port: 8082,
+    disableHostCheck: true,
     proxy: {
       '/staging': {
         target: 'http://192.168.11.82:3000',

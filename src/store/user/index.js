@@ -3,7 +3,7 @@ import actions from './actions';
 
 // vuex中的state
 const state = {
-  cartData: []
+  userData: []
 };
 
 export default {
